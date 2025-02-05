@@ -1,7 +1,7 @@
 import os
 import random
 import pygame
-import main
+import gmenu
 
 
 os.environ['SDL_VIDEO_CENTERED'] = '1'
@@ -620,7 +620,7 @@ player = Player(250, window_height - 130)
 
 game_over_rect = game_over_image.get_rect()
 run = True
-main.show_menu(screen, menu_image)
+gmenu.show_menu(screen, menu_image)
 while run:
     screen.fill('black')
     timer.tick(fps)
